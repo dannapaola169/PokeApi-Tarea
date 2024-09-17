@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pokédex</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Pokédex</h1>
+    <div class="search">
+      <input type="text" id="pokemonName" placeholder="Buscar Pokémon por nombre">
+      <button style="background-color: #0b0fe4;" onclick="buscarPokemon()">Buscar</button>
+    </div>
+    <div class="type-buttons">
+        <button style="background-color: #e40b0b;" onclick="tipoPokemon('fire')">Fuego</button>
+        <button style="background-color: #007bff;" onclick="tipoPokemon('water')">Agua</button>
+        <button style="background-color: #0ccc4c;" onclick="tipoPokemon('grass')">Planta</button>
+        <button style="background-color: #fbff00;" onclick="tipoPokemon('electric')">Eléctrico</button>
+        <button style="background-color: #998202;" onclick="tipoPokemon('rock')">Roca</button>
+        <button style="background-color: #c9c502;" onclick="tipoPokemon('ground')">Tierra</button>
+        <button style="background-color: #eb63cd;" onclick="tipoPokemon('psychic')">Psíquico</button>
+        <button style="background-color: #72025a;" onclick="tipoPokemon('poison')">Veneno</button>
+        <button style="background-color: #141214;" onclick="tipoPokemon('dark')">Siniestro</button>
+        <button style="background-color: #f700ff;" onclick="tipoPokemon('fairy')">Hada</button>
+        <button style="background-color: #23e6ec;" onclick="tipoPokemon('dragon')">Psíquico</button>
+        <button style="background-color: #89949e;" onclick="tipoPokemon('steel')">Acero</button>
+        <button style="background-color: #007bff;" onclick="tipoPokemon('ice')">Hielo</button>
+        <button style="background-color: #021c38;" onclick="tipoPokemon('dragon')">Dragón</button>
+        <button style="background-color: #025e0a;" onclick="tipoPokemon('bug')">Bicho</button>
+        <button style="background-color: #fa620a;" onclick="tipoPokemon('fighting')">Lucha</button>
+        <button style="background-color: #2b3e52;" onclick="tipoPokemon('ghost')">Fantasma</button>
+        <button style="background-color: #3c0af0;" onclick="tipoPokemon('flying')">Volador</button>
+    </div>
+    <div id="pokemonList"></div>
+    <div id="pagination"></div>
+  </div>
+  <script src="app.js"></script>
+</body>
+</html>
